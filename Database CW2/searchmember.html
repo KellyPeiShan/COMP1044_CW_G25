@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>searchmember</title>
+		<link rel="stylesheet" type="text/css" href="functionstyle.css">
+	</head>
+	<body>
+		<div class="titlebox">
+		<h1>Search for a member</h1>
+		<h2>Enter member ID or full name</h2>
+		</div>
+		<div class="btmbox" style="height:120px">
+		<form style="left:60%" action="searchmemberid.php" method="get">
+		Member ID:<br>
+		<input type="text" name="id" value="" maxlength="10" required>
+		<br><br>
+		<input class="button" style="width:220px;height:40px" type="submit" value="Search for member">
+		<br>
+		</form>
+		</div>
+		<div class="btmbox" style="height:150px">
+		<form  style="left:20%" action="searchmembername.php" method="get">
+		First name:<br>
+		<input type="text" name="firstname" value="" maxlength="30" required>
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="" maxlength="30" required>
+		<br><br>
+		<input class="button" style="width:220px;height:40px" type="submit" value="Search for member">
+		</form>
+		</div>
+	</body>
+</html>

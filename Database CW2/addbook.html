@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>addbook</title>
+<link rel="stylesheet" type="text/css" href="functionstyle.css">
+</head>
+<body>
+<div class="titlebox">
+<h1>Add a Book</h1>
+<h2>Please fill in details of the book</h2>
+</div>
+<div class="btmbox" style="height:430px">
+<form action="addbook.php" method="post" onsubmit="return validate(this)">
+Book Title:<br>
+<input type="text" name="title" maxlength="100" required>
+<br>
+Category:<br>
+<select name="category" size="1">
+<option value="1">1-Periodical</option>
+<option value="2">2-English</option>
+<option value="3">3-Math</option>
+<option value="4">4-Science</option>
+<option value="5">5-Encyclopedia</option>
+<option value="6">6-Filipiniana</option>
+<option value="7">7-Newspaper</option>
+<option value="8">8-General</option>
+<option value="9">9-References</option>
+</select>
+<br>
+Author:<br>
+<input type="text" name="author" maxlength="50" required>
+<br>
+Book Copies:<br>
+<input type="text" name="bookcopies" maxlength="10" required>
+<br>
+Book Publisher:<br>
+<input type="text" name="bookpub" maxlength="100">
+<br>
+Publisher Name:<br>
+<input type="text" name="publishername" maxlength="100">
+<br>
+ISBN:<br>
+<input type="text" name="isbn" maxlength="20" required>
+<br>
+Copyright Year:<br>
+<input type="number" min="1900" max="2022" step="1" name="copyright" value="2000" required>
+<br>
+Book Status:<br>
+<select name="status" size="1">
+<option value="1">New</option>
+<option value="2">Archive</option>
+<option value="5">Old</option>
+</select>
+<br><br>
+<input class="button" type="submit" value="Add this book">
+</form>
+</div>
+</body>
+</html>

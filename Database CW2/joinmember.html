@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>joinmember</title>
+        <link rel = "stylesheet" type ="text/css" href="functionstyle.css">
+		</head>
+        <body>
+		    <div class="titlebox" style="height:80px;line-height:70px">
+            <h1>Welcome to the membership page, please input your details to register as a member!</h1>
+			</div>
+			<br>
+            <div class="btmbox" style="height:350px">
+            <form action="joinmember.php" method="post">
+                First Name:<br>
+                <input type = "text" name = "firstname" placeholder="Enter your first name" maxlength="30" required>
+				<br>
+                Last Name:<br>
+                <input type = "text" name="lastname" placeholder="Enter your last name" maxlength="30" required>
+				<br>
+                Gender:<br>
+                <select name="Gender" size="1">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+                <br>
+                Address:<br>
+                <input type = "text" name="address" placeholder="Enter your address" maxlength="100" required>
+				<br>
+                Contact:<br>
+                <input type="text" name = "contact" placeholder="Enter your contact" maxlength="10" required>
+                <br>
+				Type ID:<br>
+                <select name = "type_id" size="1">
+                    <option value="2">2-Teacher</option>
+					<option value="20">20-Employee</option>
+					<option value="21">21-Non-Teaching</option>
+                    <option value="22">22-Student</option>
+					<option value="32">32-Construction</option>
+                </select>
+                <br>
+                Year Level:<br>
+                <select name="YearLevel" size="1">
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Forth Year">Fourth Year</option>
+                    <option value="Faculty">Faculty</option>
+                </select>
+				<br><br>
+                <input class="button" style="height:40px" type = "submit" name = "" value = "Register">
+            </form>
+        </div>
+        </body>
+</html>

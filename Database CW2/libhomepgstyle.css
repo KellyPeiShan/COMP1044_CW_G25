@@ -1,0 +1,86 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.loginbox{
+  width: 320px;
+  height: 430px;
+  background: rgb(0, 0, 0, 0.7);
+  top: 50%;
+  color: rgb(255,255,255);
+  position: absolute;
+  transform: translate(27%, -20%);
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  border: none;
+  outline: none;
+  height: 20px;
+  background: #fb2525;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10%;
+}
+
+.button:hover{
+  color: black;
+  background: #ffc107;
+}
+
+.title{
+	font-size:50px;
+	line-height:80px;
+	font-family:Copperplate Gothic Light;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b0c4de, 0 0 40px #b0c4de;
+}
+
+.welcome{
+	background-color:rgba(192,192,192,0.7);
+	height:30px;
+	line-height:50px;
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+h2{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+
+.column {
+  width: 33.33%;
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

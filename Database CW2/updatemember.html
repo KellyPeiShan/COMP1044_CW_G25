@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>updatemember</title>
+        <link rel = "stylesheet" type ="text/css" href="functionstyle.css">
+        <body>
+            <div class="titlebox" style="height:80px;line-height:70px">
+            <h1>Welcome to the membership page, please input your member id and updated member details!</h1>
+            </div>
+            <div class="btmbox" style="height:430px">
+            <form action="updatemember.php" method="post">
+                Member ID:
+                <br>
+                <input type = "text" name = "id" placeholder="Enter your member id" maxlength="10" required>
+                <br>
+                First Name:
+                <br>
+                <input type = "text" name = "firstname" placeholder="(Input only if updated)" maxlength="30" value="">
+                <br>
+                Last Name:
+                <br>
+                <input type = "text" name="lastname" placeholder="(Input only if updated)" value="" maxlength="30">
+                <br>
+                Gender:
+                <br>
+                <select name="Gender" size="1">
+				    <option value="">No changes</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+                <br>
+                Address:
+                <br>
+                <input type = "text" name="address" placeholder="(Input only if updated)" value="" maxlength="100">
+                <br>
+                Contact:
+                <br>
+                <input type="text" name = "contact" placeholder="(Input only if updated)" value="" maxlength="10">
+                <br>
+				Type ID:<br>
+                <select name = "type_id" size="1">
+				    <option value="">No changes</option>
+                    <option value="2">2-Teacher</option>
+					<option value="20">20-Employee</option>
+					<option value="21">21-Non-Teaching</option>
+                    <option value="22">22-Student</option>
+					<option value="32">32-Construction</option>
+                </select>
+				<br>
+                Year Level:
+                <br>
+                <select name="YearLevel" size="1">
+				    <option value="">No changes</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Forth Year">Fourth Year</option>
+                    <option value="Faculty">Faculty</option>
+                </select>
+				<br>
+				Status:<br>
+                <select name="status" size="1">
+				    <option value="">No changes</option>
+                    <option value="1">Active</option>
+                    <option value="2">Banned</option>
+                </select>
+                <br><br>
+                <input class = "button" type = "submit" name = "" value = "Update">
+            </form>
+        </div>
+        </body>
+    </head>
+</html>

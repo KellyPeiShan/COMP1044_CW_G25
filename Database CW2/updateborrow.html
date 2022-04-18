@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>updateborrowdetails</title>
+        <link rel = "stylesheet" type ="text/css" href="functionstyle.css">
+        <body>
+            <div class="titlebox">
+			<h1>Update borrow details</h1>
+            <h2>Please input borrow id and updated borrow details below</h2>
+            </div>
+            <div class="btmbox" style="height:230px">
+            <form action="updateborrow.php" method="post">
+			    Borrow ID:
+                <br>
+                <input type = "text" name = "borrowid" placeholder="Enter borrow ID" maxlength="10" required>
+                <br>
+				Extend Due Date:
+				<br>
+				<input type = "date" name = "duedate" value="">
+				<br>
+                Borrow status:
+                <br>
+                <select name="borrow_status" size="1">
+				    <option value="">No changes</option>
+                    <option value="1">Pending</option>
+                    <option value="2">Returned</option>
+                </select>
+                <br>
+                Date returned:
+                <br>
+                <input type = "datetime-local" name = "date_returned" value="">
+                <br><br>
+                <input class = "button" type = "submit" name = "" value = "Update">
+            </form>
+        </div>
+        </body>
+    </head>
+</html>
